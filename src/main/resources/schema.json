@@ -1,0 +1,245 @@
+{
+  "type":"struct",
+  "fields":[
+    {
+      "name":"body",
+      "type":{
+        "type":"struct",
+        "fields":[
+          {
+            "name":"sent_at",
+            "type":"string",
+            "nullable":true,
+            "metadata":{
+
+            }
+          },
+          {
+            "name":"text",
+            "type":"string",
+            "nullable":true,
+            "metadata":{
+
+            }
+          }
+        ]
+      },
+      "nullable":true,
+      "metadata":{
+
+      }
+    },
+    {
+      "name":"header",
+      "type":{
+        "type":"struct",
+        "fields":[
+          {
+            "name":"attachment",
+            "type":"string",
+            "nullable":true,
+            "metadata":{
+
+            }
+          },
+          {
+            "name":"bcc",
+            "type":{
+              "type":"array",
+              "elementType":{
+                "type":"struct",
+                "fields":[
+                  {
+                    "name":"id",
+                    "type":"string",
+                    "nullable":true,
+                    "metadata":{
+
+                    }
+                  },
+                  {
+                    "name":"domain",
+                    "type":"string",
+                    "nullable":true,
+                    "metadata":{
+
+                    }
+                  }
+                ]
+              },
+              "containsNull":true
+            },
+            "nullable":true,
+            "metadata":{
+
+            }
+          },
+          {
+            "name":"cc",
+            "type":{
+              "type":"array",
+              "elementType":{
+                "type":"struct",
+                "fields":[
+                  {
+                    "name":"id",
+                    "type":"string",
+                    "nullable":true,
+                    "metadata":{
+
+                    }
+                  },
+                  {
+                    "name":"domain",
+                    "type":"string",
+                    "nullable":true,
+                    "metadata":{
+
+                    }
+                  }
+                ]
+              },
+              "containsNull":true
+            },
+            "nullable":true,
+            "metadata":{
+
+            }
+          },
+          {
+            "name":"from",
+            "type":{
+              "type":"struct",
+              "fields":[
+                {
+                  "name":"id",
+                  "type":"string",
+                  "nullable":true,
+                  "metadata":{
+
+                  }
+                },
+                {
+                  "name":"domain",
+                  "type":"string",
+                  "nullable":true,
+                  "metadata":{
+
+                  }
+                }
+              ]
+            },
+            "nullable":true,
+            "metadata":{
+
+            }
+          },
+          {
+            "name":"id",
+            "type":"string",
+            "nullable":true,
+            "metadata":{
+
+            }
+          },
+          {
+            "name":"subject",
+            "type":{
+              "type":"struct",
+              "fields":[
+                {
+                  "name":"is_forward",
+                  "type":"boolean",
+                  "nullable":true,
+                  "metadata":{
+
+                  }
+                },
+                {
+                  "name":"is_reply",
+                  "type":"boolean",
+                  "nullable":true,
+                  "metadata":{
+
+                  }
+                },
+                {
+                  "name":"text",
+                  "type":"string",
+                  "nullable":true,
+                  "metadata":{
+
+                  }
+                }
+              ]
+            },
+            "nullable":true,
+            "metadata":{
+
+            }
+          },
+          {
+            "name":"timestamp",
+            "type":"string",
+            "nullable":true,
+            "metadata":{
+
+            }
+          },
+          {
+            "name":"content_type",
+            "type":"string",
+            "nullable":true,
+            "metadata":{
+
+            }
+          },
+          {
+            "name":"charset",
+            "type":"string",
+            "nullable":true,
+            "metadata":{
+
+            }
+          },
+          {
+            "name":"to",
+            "type":{
+              "type":"array",
+              "elementType":{
+                "type":"struct",
+                "fields":[
+                  {
+                    "name":"id",
+                    "type":"string",
+                    "nullable":true,
+                    "metadata":{
+
+                    }
+                  },
+                  {
+                    "name":"domain",
+                    "type":"string",
+                    "nullable":true,
+                    "metadata":{
+
+                    }
+                  }
+                ]
+              },
+              "containsNull":true
+            },
+            "nullable":true,
+            "metadata":{
+
+            }
+          }
+        ]
+      },
+      "nullable":true,
+      "metadata":{
+
+      }
+    }
+  ]
+}
